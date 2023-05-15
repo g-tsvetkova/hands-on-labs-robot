@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Connect to Robot{% endblock %}
+
+{% block content %}
+  <h1>Welcome, <span id="username">{{ username }}</span></h1>
+  <form action="/dashboard" method="POST">
+    <button type="submit">Connect to Robot</button>
+  </form>
+{% endblock %}
+
+{% block styles %}
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: #333333;
+    }
+    button {
+      padding: 20px 40px;
+      font-size: 24px;
+      background-color: blue;
+      color: white;
+    }
+  </style>
+{% endblock %}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Streamed Video of Your Robot</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+    }
+    
+    h2 {
+      color: #333333;
+    }
+
+    .video-container {
+      text-align: center;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .adjustable-line {
+      margin: 10px;
+      width: 300px;
+    }
+
+    .adjustable-label {
+      display: inline-block;
+      width: 50px;
+      text-align: right;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <h2>Streamed YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fn3KWM1kuAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <div class="button-container">
+    <div class="adjustable-line">
+      <span class="adjustable-label">Gripper:</span>
+      <input type="range" min="0" max="10" value="5">
+    </div>
+    <div class="adjustable-line">
+      <span class="adjustable-label">Base:</span>
+      <input type="range" min="0" max="10" value="5">
+    </div>
+    <div class="adjustable-line">
+      <span class="adjustable-label">Shoulder:</span>
+      <input type="range" min="0" max="10" value="5">
+    </div>
+    <div class="adjustable-line">
+      <span class="adjustable-label">Elbow:</span>
+      <input type="range" min="0" max="10" value="5">
+    </div>
+  </div>
+</body>
+</html>
